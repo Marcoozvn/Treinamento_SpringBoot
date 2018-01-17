@@ -1,0 +1,7 @@
+package com.embedded.workshop.service.impl;
+
+import com.embedded.workshop.service.CrudService;
+
+public class TaskServiceImpl implements CrudService<Task> {
+
+}

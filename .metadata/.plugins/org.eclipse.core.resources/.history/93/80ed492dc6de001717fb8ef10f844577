@@ -1,0 +1,55 @@
+package com.embedded.workshop.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.embedded.workshop.model.Task;
+import com.embedded.workshop.service.impl.TaskServiceImpl;
+
+@RestController
+public class TaskController implements CrudController<Task>{
+	
+	@Autowired
+	private TaskServiceImpl taskService; 
+	
+	public TaskController() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public TaskController(TaskServiceImpl task) {
+		this.taskService = task;
+	}
+	
+	@Override
+	public ResponseEntity<Task> create(Task t) {
+		
+	}
+
+	@Override
+	public ResponseEntity<Task> update(Integer i, Task t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ResponseEntity<Void> delete(Integer i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ResponseEntity<List<Task>> all() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ResponseEntity<Task> getById(Integer i) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}

@@ -1,0 +1,12 @@
+package com.embedded.workshop.service;
+
+import java.util.List;
+
+public interface CrudService <T>{
+	public T create(T t);
+	public T update(T t);
+	public List<T> getAll();
+	public T getById(Integer id);
+	public void removeById(Integer id);
+	public void removeAll();
+}

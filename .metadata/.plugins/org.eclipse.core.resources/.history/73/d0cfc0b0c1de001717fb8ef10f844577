@@ -1,0 +1,5 @@
+package com.embedded.workshop.service;
+
+public interface CrudService {
+	public <T> create(T);
+}

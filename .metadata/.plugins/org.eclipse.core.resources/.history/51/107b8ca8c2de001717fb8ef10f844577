@@ -1,0 +1,45 @@
+package com.embedded.workshop.service.impl;
+
+import java.util.List;
+
+import com.embedded.workshop.service.CrudService;
+
+public class TaskServiceImpl implements CrudService<Task> {
+
+	@Override
+	public Task create(Task t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Task update(Task t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Task> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Task getById(Integer id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void removeById(Integer id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeAll() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

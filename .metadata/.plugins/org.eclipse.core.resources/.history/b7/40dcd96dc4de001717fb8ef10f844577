@@ -1,0 +1,59 @@
+package com.embedded.workshop.service.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.embedded.workshop.model.Task;
+import com.embedded.workshop.repository.TaskRepository;
+import com.embedded.workshop.service.CrudService;
+
+@Service
+public class TaskServiceImpl implements CrudService<Task> {
+	@Autowired
+	private TaskRepository repository;
+	
+	public TaskServiceImpl() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public TaskServiceImpl(TaskRepository repository) {
+		this.repository = repository;
+	}
+	
+	@Override
+	public Task create(Task t) {
+		return repository.save(t);
+	}
+
+	@Override
+	public Task update(Task t) {
+		if (repository.exists(t.getId())) {
+			return repository.save(t);
+		}
+		return null;
+	}
+
+	@Override
+	public List<Task> getAll() {
+		return repository.findAll();
+	}
+
+	@Override
+	public Task getById(Integer id) {
+		return repository.findOne(id);
+	}
+
+	@Override
+	public void removeById(Integer id) {
+		repository.delete(id);		
+	}
+
+	@Override
+	public void removeAll() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

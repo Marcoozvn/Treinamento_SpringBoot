@@ -1,0 +1,5 @@
+package com.embedded.workshop.repository;
+import com.embedded.workshop.model.*;
+public interface TaskRepository {
+	public List<Task> findAll();
+}

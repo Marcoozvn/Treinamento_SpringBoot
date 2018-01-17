@@ -1,0 +1,18 @@
+package com.embedded.workshop.controller;
+
+import java.util.List;
+
+import org.springframework.http.ResponseEntity;
+
+public interface CrudController<T>{
+	
+	public ResponseEntity<T> create(T t);
+
+	public ResponseEntity<T> update(Integer i, T t);
+	
+	public ResponseEntity<Void> delete(Integer i);
+	
+	public ResponseEntity<List<T>> all();
+	
+	public getById(Integer i);
+}

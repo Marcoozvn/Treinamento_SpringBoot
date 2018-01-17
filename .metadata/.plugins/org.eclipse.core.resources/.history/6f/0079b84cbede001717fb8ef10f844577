@@ -1,0 +1,5 @@
+package com.embedded.workshop.model;
+
+public class Task {
+
+}

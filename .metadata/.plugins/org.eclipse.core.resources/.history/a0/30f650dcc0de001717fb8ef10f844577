@@ -1,0 +1,5 @@
+package com.embedded.workshop.repository;
+
+public interface TaskRepository {
+
+}

@@ -1,0 +1,5 @@
+package com.embedded.workshop.controller;
+
+public class CrudController {
+
+}

@@ -1,0 +1,6 @@
+package com.embedded.workshop.controller;
+
+@RestController
+public class TaskController {
+
+}
